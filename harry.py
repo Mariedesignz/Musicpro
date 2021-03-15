@@ -1,12 +1,14 @@
-import random
+print("welcome to Hogwarts")
 
-number = random.randint(1,4)
+print("Here is some info on our four houses")
 
-if number ==1:
-    print("Ravenclaw")
-elif number ==2:
-    print("Hufflepuff")
-elif number ==3:
-    print("Slytherin")
-else:
-    print("Gryffindor")
+thisdict = {
+    "house" : "gryffindor",
+    "colors" : "red and gold",
+    "alum" : "Ron Weasley"
+}
+house = input("Which house are you intersted: ")
+print(house)
+if house == thisdict["house"]:
+    print(thisdict["colors"])
+ 
